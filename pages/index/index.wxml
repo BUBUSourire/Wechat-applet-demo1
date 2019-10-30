@@ -1,0 +1,66 @@
+<!--banner-->
+<view class="banner">
+    <swiper indicator-dots="" autoplay="{{true}}" interval="2500" duration="1000" circular="{{true}}">
+        <swiper-item>
+            <image src="https://tva3.sinaimg.cn/large/005R6Otmgy1g76vrdbqclj30u00dmgy3" />
+        </swiper-item>
+        <swiper-item>
+            <image src="https://tva2.sinaimg.cn/large/005R6Otmgy1g776dr91k4j30u00fqk8n.jpg" />
+        </swiper-item>
+    </swiper>
+</view>
+
+<!-- 首页导航 -->
+<view class="top-nav bgw">
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-01.png"></image>
+        <text>美食</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-02.png"></image>
+        <text>洗浴足疗</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-03.png"></image>
+        <text>结婚啦</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-04.png"></image>
+        <text>卡拉OK</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-05.png"></image>
+        <text>找工作</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-06.png"></image>
+        <text>辅导班</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-07.png"></image>
+        <text>汽车保养</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-08.png"></image>
+        <text>租房</text>
+    </navigator>
+    <navigator class="top-nav-inner bd-r">
+        <image src="../../assets/icons/grid-09.png"></image>
+        <text>装修</text>
+    </navigator>
+</view>
+
+<!-- 首页入口 -->
+<view class="inside bgw mgt">
+    <navigator>
+        <image src="/assets/images/link-01.png"></image>
+        <image src="/assets/images/link-02.png"></image>
+    </navigator>
+</view>
+
+<!-- 底部导航 -->
+<view class="tabbar">
+    <mp-tabbar 
+    style="position:fixed;bottom:0;width:100%;left:0;right:0;" 
+    list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view>

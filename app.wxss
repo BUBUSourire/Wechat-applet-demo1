@@ -1,0 +1,44 @@
+/**app.wxss**/
+
+page {
+  background-color:#F1F1F1; 
+}
+
+.bgw {
+  background-color: #fff;
+}
+
+.mgt {
+    margin-top: 20rpx;
+}
+
+/* 细线边框 */
+
+.bd-r {
+  position: relative;
+}
+
+.bd-r::after {
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.bd-r:nth-child(3n)::after {
+  width: 0;
+}
+
+/* 细线边框 */
+
+/* 箭头 */
+.arrow {
+    width: 20rpx;
+    height: 20rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+}
+/* 箭头 */

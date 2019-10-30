@@ -1,0 +1,7 @@
+<view class="card">
+    <text class="card-title">标题</text>
+    <text class="card-time">时间</text>
+    <image src="https://i.ibb.co/gthJSvP/19.jpg" mode="aspectFill"></image>
+    <text class="card-introduce">越努力越幸运~</text>
+    <text class="card-detail">查看详情</text>
+</view>
