@@ -1,1 +1,27 @@
 /* pages/mine/mine.wxss */
+
+.mine {
+    background-color: #394865;
+    height: 410rpx;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mine image {
+    width: 200rpx;
+    height: 200rpx;
+    border: 5px solid #a0b3da7e;
+    border-radius: 50%;
+}
+
+.cell {
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.cell-item {
+    padding: 25rpx;
+    border-bottom: 1px solid #e7e7e7;
+}

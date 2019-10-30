@@ -43,9 +43,10 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
-					"name": "message",
-					"pathName": "pages/message/message",
+					"id": 0,
+					"name": "pages/mine/mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
 					"scene": null
 				}
 			]
