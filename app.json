@@ -3,7 +3,8 @@
         "pages/index/index",
         "pages/message/message",
         "pages/mine/mine",
-        "pages/contact/contact"
+        "pages/contact/contact",
+        "pages/shopList/shopList"
     ],
     "window": {
         "backgroundTextStyle": "light",

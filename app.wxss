@@ -55,3 +55,15 @@ page {
     background-color: #f1f1f1;
     box-shadow: 0px 4px 3px -3px rgba(168, 167, 167, 0.75) inset;
 }
+
+/* 栏目 */
+
+.cell {
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.cell-item {
+    padding: 25rpx;
+    border-bottom: 1px solid #e7e7e7;
+}

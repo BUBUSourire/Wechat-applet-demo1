@@ -12,7 +12,7 @@
 
 <!-- 首页导航 -->
 <view class="top-nav bgw">
-    <navigator class="top-nav-inner bd-r">
+    <navigator class="top-nav-inner bd-r" url="/pages/shopList/shopList">
         <image src="../../assets/icons/grid-01.png"></image>
         <text>美食</text>
     </navigator>

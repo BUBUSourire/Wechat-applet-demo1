@@ -44,8 +44,8 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/mine/mine",
-					"pathName": "pages/mine/mine",
+					"name": "单页",
+					"pathName": "pages/shopList/shopList",
 					"query": "",
 					"scene": null
 				}

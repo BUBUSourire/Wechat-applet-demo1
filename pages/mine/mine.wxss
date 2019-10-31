@@ -16,12 +16,3 @@
     border-radius: 50%;
 }
 
-.cell {
-    background-color: #fff;
-    font-size: 14px;
-}
-
-.cell-item {
-    padding: 25rpx;
-    border-bottom: 1px solid #e7e7e7;
-}
