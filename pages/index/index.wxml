@@ -2,10 +2,10 @@
 <view class="banner">
     <swiper indicator-dots="" autoplay="{{true}}" interval="2500" duration="1000" circular="{{true}}">
         <swiper-item>
-            <image src="https://tva3.sinaimg.cn/large/005R6Otmgy1g76vrdbqclj30u00dmgy3" />
+            <image src="{{items[0].image}}" />
         </swiper-item>
         <swiper-item>
-            <image src="https://tva2.sinaimg.cn/large/005R6Otmgy1g776dr91k4j30u00fqk8n.jpg" />
+            <image src="{{items[1].image}}" />
         </swiper-item>
     </swiper>
 </view>
@@ -60,7 +60,5 @@
 
 <!-- 底部导航 -->
 <view class="tabbar">
-    <mp-tabbar 
-    style="position:fixed;bottom:0;width:100%;left:0;right:0;" 
-    list="{{list}}" bindchange="tabChange"></mp-tabbar>
+    <mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
 </view>
