@@ -1,10 +1,10 @@
-<view class="shop">
-    <image src="https://i.ibb.co/QK7ns06/b9fc16ee5ab7d82eb2be33938e7e2444112262.jpg" mode="aspectFill"></image>
+<view class="shop" wx:for="{{shopLists}}" wx:key="{{item.id}}">
+    <image src="{{item.images[0]}}" mode="aspectFill"></image>
     <view class="shopDetail">
-        <text class="shopName">店铺名称</text>
-        <text>电话:</text>
-        <text>地址:</text>
-        <text>营业时间:</text>
+        <text class="shopName">{{item.name}}</text>
+        <text>{{item.phone}}</text>
+        <text>{{item.address}}</text>
+        <text>{{item.businessHours}}</text>
     </view>
     <view class="star">
         <view class="starBefore">★★★★★</view>

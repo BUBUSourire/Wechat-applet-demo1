@@ -2,17 +2,21 @@
 
 .shop {
     width: 100%;
-    padding: 30rpx;
+    padding: 30rpx 20rpx;
     border-bottom: 1rpx solid #bdbdbd;
     display: flex;
 }
 
 image {
-    width: 210rpx;
-    height: 210rpx;
+    max-width: 210rpx;
+    max-height: 210rpx;
+    overflow: hidden;
+    vertical-align: middle;
 }
 
 .shopDetail {
+    width: 100%;
+    padding: 0 20rpx;
     display: flex;
     flex-direction: column;
     font-size: 12px;
@@ -21,7 +25,8 @@ image {
 }
 
 .shopDetail text {
-    margin: 10rpx;
+    padding: 10rpx;
+    width: 90%;
 }
 
 .shopName {

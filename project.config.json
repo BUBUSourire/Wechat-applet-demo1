@@ -52,7 +52,7 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "单页",
+					"name": "pages/shopList/shopList",
 					"pathName": "pages/shopList/shopList",
 					"query": "",
 					"scene": null
