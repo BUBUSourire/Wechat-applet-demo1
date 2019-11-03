@@ -5,6 +5,7 @@
     padding: 30rpx 20rpx;
     border-bottom: 1rpx solid #bdbdbd;
     display: flex;
+    position: relative;
 }
 
 image {
@@ -16,12 +17,12 @@ image {
 
 .shopDetail {
     width: 100%;
-    padding: 0 20rpx;
+    padding: 0 10rpx;
     display: flex;
     flex-direction: column;
     font-size: 12px;
     color: rgb(104, 103, 103);
-    margin-left: 20rpx;
+    margin-left: 10rpx;
 }
 
 .shopDetail text {
@@ -29,26 +30,18 @@ image {
     width: 90%;
 }
 
-.shopName {
+.shopDetail .shopName {
     color: #000;
     font-size: 16px;
-}
-
-.star {
-    position: absolute;
-    top: 20rpx;
-    right: 20rpx;
-}
-
-.starBefore {
-    color: #ccc;
-}
-
-.starAfter {
-    position: absolute;
-    top: 0;
-    right: 20rpx;
-    color: #ff6f00;
-    width: 85%;
+    width: 10em;
     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.loadend {
+    text-align: center;
+    color: #888;
+    font-size: 30rpx;
+    line-height: 100rpx;
 }

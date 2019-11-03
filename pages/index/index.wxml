@@ -9,7 +9,7 @@
 
 <!-- 首页导航 -->
 <view class="top-nav bgw">
-    <navigator class="top-nav-inner bd-r" url="/pages/shopList/shopList" wx:for="{{icons}}" wx:key="{{item.id}}">
+    <navigator class="top-nav-inner bd-r" url="/pages/shopList/shopList?cat={{item.id}}&title={{item.name}}" wx:for="{{icons}}" wx:key="{{item.id}}">
         <image src="{{item.icon}}" lazy-load/>
         <text>{{item.name}}</text>
     </navigator>

@@ -2,12 +2,15 @@
     <image src="{{item.images[0]}}" mode="aspectFill"></image>
     <view class="shopDetail">
         <text class="shopName">{{item.name}}</text>
-        <text>{{item.phone}}</text>
-        <text>{{item.address}}</text>
-        <text>{{item.businessHours}}</text>
+        <text>电话：{{item.phone}}</text>
+        <text>地址：{{item.address}}</text>
+        <text>营业时间：{{item.businessHours}}</text>
     </view>
     <view class="star">
         <view class="starBefore">★★★★★</view>
-        <view class="starAfter">★★★★★</view>
+        <view class="starAfter" style="width:{{item.score}}%">★★★★★</view>
     </view>
 </view>
+
+<view class="loadmore loading" hidden="{{hiddenLoad}}">正在加载...</view>
+<view class="loadend" hidden="{{hiddenEnd}}">我是有底线的！</view>

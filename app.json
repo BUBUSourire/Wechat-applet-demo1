@@ -8,20 +8,20 @@
     ],
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#394865",
-        "navigationBarTitleText": "Demo",
+        "navigationBarBackgroundColor": "#FF6F00",
+        "navigationBarTitleText": "本地宝",
         "navigationBarTextStyle": "white"
     },
     "sitemapLocation": "sitemap.json",
     "tabBar": {
-        "color":"#333",
-        "selectedColor": "#394865",
+        "color": "#333",
+        "selectedColor": "#FF6F00",
         "list": [
             {
                 "pagePath": "pages/index/index",
                 "text": "首页",
-                "iconPath":"assets/tabs/home.png",
-                "selectedIconPath":"assets/tabs/home-active.png"
+                "iconPath": "assets/tabs/home.png",
+                "selectedIconPath": "assets/tabs/home-active.png"
             },
             {
                 "pagePath": "pages/message/message",
@@ -30,16 +30,16 @@
                 "selectedIconPath": "assets/tabs/message-active.png"
             },
             {
-                "pagePath": "pages/contact/contact",
-                "text": "联系",
-                "iconPath": "assets/tabs/contact.png",
-                "selectedIconPath": "assets/tabs/contact-active.png"
-            },
-            {
                 "pagePath": "pages/mine/mine",
                 "text": "我的",
                 "iconPath": "assets/tabs/mine.png",
                 "selectedIconPath": "assets/tabs/mine-active.png"
+            },
+            {
+                "pagePath": "pages/contact/contact",
+                "text": "联系",
+                "iconPath": "assets/tabs/contact.png",
+                "selectedIconPath": "assets/tabs/contact-active.png"
             }
         ]
     }

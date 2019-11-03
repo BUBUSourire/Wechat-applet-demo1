@@ -1,4 +1,5 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "美食"
+    "usingComponents": {},
+    "navigationBarTitleText": "本地宝",
+    "enablePullDownRefresh": true
 }

@@ -1,71 +1,80 @@
 // pages/shopList/shopList.js
 Page({
     data: {
-        shopLists:[],
+        shopLists: [],
+        pageIndex: 0,
+        pageSize: 20,
+        catId: 1,
+        hasMore: true,
+        hiddenEnd: true,
+        hiddenLoad: false
     },
-    onLoad: function (options) {
+
+    //加载更多
+    loadMore() {
+        if (!this.data.hasMore && this.data.shopLists.length>0) {
+            this.setData({
+                hiddenEnd: false,
+                hiddenLoad: true
+            })
+        }
+
         wx.request({
-            data:{
-                _limit:20, //约束每页请求的数据
-                _page:1
+            data: {
+                _limit: this.data.pageSize, //约束每页请求的数据
+                _page: ++this.data.pageIndex
             },
-            url: 'https://locally.uieee.com/categories/1/shops',
-            method:"GET",
-            success:(res)=>{
-                console.log(res)
+            url: 'https://locally.uieee.com/categories/' + this.data.catId + '/shops',
+            method: "GET",
+            success: (res) => {
+                var newList = this.data.shopLists.concat(res.data)
+                var count = parseInt(res.header['X-Total-Count'])
+                var flag = this.data.pageIndex * this.data.pageSize < count;
                 this.setData({
-                    shopLists:res.data
+                    shopLists: newList,
+                    hasMore: flag,
                 })
             }
         })
     },
+    onLoad: function(options) {
+        if (options.title) {
+            wx.setNavigationBarTitle({
+                title: options.title,
+            })
+        }
 
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
+        this.setData({
+            catId: options.cat,
+         
+        })
+        this.loadMore()
     },
 
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
-    onPullDownRefresh: function () {
-
+    onPullDownRefresh: function() {
+        this.setData({
+            shopLists:[],
+            pageIndex:0,
+            hasMore:true
+        })
+        this.loadMore()
+        wx.stopPullDownRefresh()
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
-    onReachBottom: function () {
-
+    onReachBottom: function() {
+        this.loadMore()
     },
 
     /**
      * 用户点击右上角分享
      */
-    onShareAppMessage: function () {
+    onShareAppMessage: function() {
 
     }
 })

@@ -6,10 +6,12 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -21,7 +23,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.9.1",
 	"appid": "wxea7485bab74ed065",
 	"projectname": "demo1",
 	"debugOptions": {
@@ -54,7 +56,7 @@
 					"id": 0,
 					"name": "pages/shopList/shopList",
 					"pathName": "pages/shopList/shopList",
-					"query": "",
+					"query": "cat=1",
 					"scene": null
 				}
 			]
